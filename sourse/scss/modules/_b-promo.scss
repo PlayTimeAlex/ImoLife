@@ -1,0 +1,37 @@
+.b-promo{
+    padding: em(338) 0 em(83);
+    background: url(../images/b-promo_bg.jpg) no-repeat center center #242718;
+    background-size: cover;
+    &__title{
+        color: #FFF;
+        $font-size: 42;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.2;
+    }
+    &__logo{
+        text-align: center;
+        padding-bottom: em(18);
+        img{
+            display: block;
+            margin: 0 auto em(20);
+        }
+        .text{
+            display: inline-block;
+            color: #FFF;
+            $font-size: 15;
+            font-size: em($font-size);
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: rgba(36, 39, 34, .59);
+            border-radius: 1em;
+            line-height: 2;
+            padding: 0 em(18, $font-size);
+        }
+    }
+    &__reg{
+        text-align: center;
+        padding-top: em(53);
+    }
+}

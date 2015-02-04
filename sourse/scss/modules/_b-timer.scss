@@ -1,0 +1,41 @@
+.b-timer{
+    text-align: center;
+    padding-bottom: em(38);
+    &__item{
+        display: inline-block;
+    }
+    &__title{
+        color: #FFF;
+        $font-size: 16;
+        font-size: em($font-size);
+        font-weight: 600;
+        padding-bottom: em(13, $font-size);
+    }
+    &__num{
+        color: #FFF;
+        $font-size: 60;
+        font-size: em($font-size);
+        font-weight: 700;
+        display: block;
+        line-height: 1;
+        padding-bottom: em(3, $font-size);
+    }
+    &__text{
+        color: #FFF;
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-transform: uppercase;
+        display: block;
+    }
+    &__separator{
+        color: #FFF;
+        $font-size: 30;
+        font-size: em($font-size);
+        font-weight: 300;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 2;
+        padding: 0 em(5, $font-size);
+    }
+}

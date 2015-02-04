@@ -1,0 +1,35 @@
+.b-sale{
+    &__title{
+        color: #FFF;
+        $font-size: 36;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: em(10, $font-size);
+        .sup{
+            color: #f02d00;
+        }
+    }
+    &__subtitle{
+        color: #FFF;
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: em(35, $font-size);
+    }
+    &__subinfo{
+        font-weight: 600;
+        color: #F1EEEA;
+        $font-size: 14;
+        font-size: em($font-size);
+        text-align: center;
+        padding: em(35, $font-size) 0 0;
+        sup{
+            color: #F02D00;
+            $font-size: 24;
+            font-size: em($font-size);
+        }
+    }
+}

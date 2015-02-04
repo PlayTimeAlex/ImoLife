@@ -1,0 +1,29 @@
+.b-contacts{
+    padding: em(290) 0 0;
+    background: url(../images/content/map.jpg) repeat-y center top #f0ede5;
+    &__content{
+        background: url(../images/b64/b-contacts__bg.png);
+        padding: em(80) 0 em(100);
+    }
+    &__title{
+        color: #FFF;
+        $font-size: 36;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: em(6, $font-size);
+    }
+    &__subtitle{
+        color: #FFF;
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: em(51, $font-size);
+    }
+    &__button-wrap{
+        text-align: center;
+        padding: em(22) 0 0;
+    }
+}

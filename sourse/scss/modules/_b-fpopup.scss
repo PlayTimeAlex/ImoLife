@@ -1,0 +1,89 @@
+.b-fpopup{
+    &__head{
+        color: #FFF;
+        $font-size: 30;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        padding: em(47, $font-size) em(40, $font-size) em(27, $font-size);
+        background: url(../images/b-program__bg.jpg);
+    }
+    &__content{
+        padding: em(25) em(40) em(27);
+    }
+    &__footer{
+        padding: em(29) em(40) em(40);
+        background: url(../images/b64/b-reasons.png);
+    }
+    &__cmsg{
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 600;
+        line-height: 1.57;
+        text-align: center;
+        padding-bottom: em(25, $font-size);
+    }
+    &__text{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #FFF;
+        border-radius: 4px;
+        box-shadow: 0 1px 0 #FFF, inset 0 1px 0 rgba(0, 0, 0, 0.05), 0 0 0 rgba(255, 255, 255, 0.18), inset 0 0 0 rgba(0, 0, 0, 0.03);
+        border: 1px solid #CDCDCD;
+        margin: 0;
+        color: #858585;
+        $font-size: 13;
+        font-size: em($font-size);
+        padding: 0 em(10, $font-size) 0 em(40, $font-size);
+        text-transform: uppercase;
+        display: block;
+        height: 36px;
+        background-repeat: no-repeat;
+        background-position: em(15, $font-size) 50%;
+        transition:box-shadow .3s;
+        &.error{
+            box-shadow: 0 0 4px #FF0000;
+        }
+        &:focus{
+            box-shadow: 0 0 4px  #b5adad;
+        }
+        &.icon5{
+            background-position: em(14, $font-size) 50%;
+        }
+        &::-webkit-input-placeholder {
+            color: #b5adad;
+        }
+        &::-moz-placeholder {  /* Firefox 19+ */
+            color: #b5adad;
+        }
+        &:-ms-input-placeholder {
+            color: #b5adad;
+        }
+    }
+    &__el{
+        padding-bottom: 9px;
+    }
+    &__response-output{
+        $font-size: 15;
+        font-size: em($font-size);
+        color: #373738;
+        text-align: center;
+        padding: em(5, $font-size) em(10, $font-size);
+        border:1px solid #373738;
+        margin-top: em(10, $font-size);
+        display: none;
+        &.error{
+            border-color:#FF0000;
+        }
+    }
+    &__submit{
+        &.sending{
+            color:transparent;
+            background-image: url(../images/ajax-loader.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #f2f2f2;
+            cursor: default;
+        }
+    }
+}

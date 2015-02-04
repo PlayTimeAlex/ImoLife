@@ -1,0 +1,42 @@
+.b-footer{
+    background: url(../images/b64/b-footer__bg.png);
+    padding: em(35) 0;
+    &__copyrights{
+        color: #B4B4B4;
+        $font-size: 14;
+        font-size: em($font-size);
+    }
+    &__mlink{
+        color: #B4B4B4;
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__created{
+        $font-size: 14;
+        font-size: em($font-size);
+        color: #999;
+        text-align: right;
+        &:before{
+            content:"";
+            display: inline-block;
+            width: 13px;
+            height: 14px;
+            background: url(../images/b64/heart.png) no-repeat center center;
+            vertical-align: middle;
+            margin: -2px 5px 0 0;
+        }
+        a{
+            color: #B4B4B4;
+            font-weight: 600;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

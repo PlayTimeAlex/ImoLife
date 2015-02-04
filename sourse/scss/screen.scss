@@ -1,0 +1,69 @@
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,800,400&subset=latin,cyrillic);
+
+@import "modules/base";
+@import "modules/reset";
+@import "modules/grid";
+@import "modules/pr";
+@import "modules/b-image";
+@import "modules/colorbox";
+body{
+    min-width:1012px;
+    position: relative;
+}
+.container{
+    width: 980px;
+    margin: 0 auto;
+}
+.icon4{
+    background-image: url(../images/b64/i-name.png);
+}
+.icon5{
+    background-image: url(../images/b64/i-tel.png);
+}
+.icon6, .icon6:before{
+    background-image: url(../images/b64/icon6.png);
+}
+.icon7, .icon7:before{
+    background-image: url(../images/b64/icon7.png);
+}
+.icon8, .icon8:before{
+    background-image: url(../images/b64/icon8.png);
+}
+.icon9, .icon9:before{
+    background-image: url(../images/b64/icon9.png);
+}
+.icon10{
+    background-image: url(../images/b64/icon10.png);
+}
+.icon11{
+    background-image: url(../images/b64/icon11.png);
+}
+.icon12{
+    background-image: url(../images/b64/icon12.png);
+}
+.icon13{
+    background-image: url(../images/b64/popup-name.png);
+}
+.icon14{
+    background-image: url(../images/b64/popup-tel.png);
+}
+
+@import "modules/b-block";
+@import "modules/b-header";
+@import "modules/b-topnav";
+@import "modules/b-promo";
+@import "modules/b-reasons";
+@import "modules/b-tab";
+@import "modules/b-timer";
+@import "modules/b-sform";
+@import "modules/b-sale";
+@import "modules/b-spikers";
+@import "modules/b-program";
+@import "modules/b-numders";
+@import "modules/b-features";
+@import "modules/b-ritem";
+@import "modules/b-vreview";
+@import "modules/b-contacts";
+@import "modules/b-citem";
+@import "modules/b-footer";
+@import "modules/b-fpopup";

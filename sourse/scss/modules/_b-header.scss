@@ -1,0 +1,66 @@
+.b-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    z-index: 50;
+    background-color: #fff;
+    &.fixed{
+        position: fixed;
+        top: -165px;
+    }
+    &__top{
+        text-align: center;
+        background: url(../images/b-header__top.jpg) no-repeat center center #f76d29;
+        background-size: cover;
+        padding: em(48) 0 em(40);
+    }
+    &.fixed &__top{
+        opacity: 0;
+    }
+    &__slogan{
+        color: #FFF;
+        $font-size: 30;
+        font-size: em($font-size);
+        font-weight: 300;
+    }
+    &__date{
+        color: #FFF;
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: em(5, $font-size) 0 em(5, $font-size) 0;
+        .text{
+            background: url(../images/b64/b-header__date.png) no-repeat left center;
+            padding-left: em(26, $font-size);
+            display: inline-block;
+        }
+    }
+    &__bottom{
+        padding: em(17) 0 em(12);
+        background-color: #fff;
+    }
+    &__tel{
+        color: #858585;
+        $font-size: 14;
+        font-size: em($font-size);
+        font-weight: 600;
+        padding: em(9, $font-size) em(10) em(9, $font-size) em(24, $font-size);
+        background: url(../images/b64/b-header__tel.png) no-repeat left center;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 980px) {
+    .b-header{
+        &.fixed{
+            position: absolute;
+        }
+        &.fixed &__top{
+            opacity: 1;
+        }
+    }
+}

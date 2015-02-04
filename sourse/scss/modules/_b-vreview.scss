@@ -1,0 +1,32 @@
+.b-vreview{
+    padding: em(346) 0 em(270);
+    background: url(../images/b-video_bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    &__title{
+        color: #FFF;
+        $font-size: 36;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        padding: em(18, $font-size) 0 0;
+    }
+    &__button-wrap{
+        padding: em(65) 0 0;
+        text-align: center;
+    }
+    &__hd{
+        text-align: center;
+        .text{
+            color: #FFF;
+            $font-size: 15;
+            font-size: em($font-size);
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            background-color: rgba(26,26,26, .59);
+            padding: 0 em(17, $font-size);
+            line-height: 2;
+            border-radius: 1em;
+        }
+    }
+}

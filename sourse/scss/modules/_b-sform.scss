@@ -1,0 +1,67 @@
+.b-sform{
+    padding: em(0) em(25);
+    &__el{
+        padding: 0 0 em(9);
+    }
+    &__text{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #EF7B26;
+        border-radius: 1px;
+        box-shadow: 0 2px 0 rgba(254, 151, 75, 0.75);
+        border: 0;
+        margin: 0;
+        color: #FFCDA4;
+        $font-size: 13;
+        font-size: em($font-size);
+        padding: 0 em(10, $font-size) 0 em(40, $font-size);
+        text-transform: uppercase;
+        display: block;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: em(15, $font-size) 50%;
+        transition:box-shadow .3s;
+        &.error{
+            box-shadow: 0 0 4px #FF0000;
+        }
+        &:focus{
+            box-shadow: 0 0 4px  rgba(255,255,255,.5);
+        }
+        &.icon5{
+            background-position: em(14, $font-size) 50%;
+        }
+        &::-webkit-input-placeholder {
+            color: #FFCDA4;
+        }
+        &::-moz-placeholder {  /* Firefox 19+ */
+            color: #FFCDA4;
+        }
+        &:-ms-input-placeholder {
+            color: #FFCDA4;
+        }
+    }
+    &__submit{
+        margin-top: rem(23);
+        &.sending{
+            color:transparent;
+            background-image: url(../images/ajax-loader.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: #fff;
+            cursor: default;
+        }
+    }
+    &__response-output{
+        $font-size: 15;
+        font-size: em($font-size);
+        color: #fff;
+        text-align: center;
+        padding: em(5, $font-size) em(10, $font-size);
+        border:1px solid #fff;
+        margin-top: em(10, $font-size);
+        display: none;
+        &.error{
+            border-color:#FF0000;
+        }
+    }
+}

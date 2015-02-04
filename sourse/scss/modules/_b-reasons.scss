@@ -1,0 +1,24 @@
+.b-reasons{
+    background: url(../images/b64/b-reasons.png);
+    padding: em(89) 0 0;
+    &__title{
+        color: #373737;
+        $font-size: 30;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.3;
+        padding-bottom: em(52, $font-size);
+    }
+    &__reg{
+        $font-size: 15;
+        font-size: rem($font-size);
+        font-weight: 600;
+        color: #858585;
+        text-decoration: none;
+        background: url(../images/b64/b-reasons__reg.png) no-repeat right center;
+        display: inline-block;
+        padding: em(10, $font-size) em(42, $font-size) em(10, $font-size) 0;
+        margin: em(15, $font-size) 0 0;
+    }
+}

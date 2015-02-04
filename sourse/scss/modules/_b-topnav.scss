@@ -1,0 +1,26 @@
+.b-topnav{
+    padding: em(8) 0;
+    &__item{
+        display: inline-block;
+        list-style: none;
+        padding: 0 em(2);
+        > a{
+            $font-size: 14;
+            font-size: em($font-size);
+            color: #858585;
+            font-weight: 600;
+            line-height: em(25, $font-size);
+            display: block;
+            transition: background-color .3s, color .3s;
+            text-decoration: none;
+            padding: 0 em(10, $font-size);
+            border-radius: em(12, $font-size);
+            &.current, &:hover{
+                color: #373737;
+            }
+            &.current{
+                background-color: #dddddd;
+            }
+        }
+    }
+}

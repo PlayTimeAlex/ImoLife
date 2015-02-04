@@ -1,0 +1,60 @@
+.b-ritem{
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: em(40);
+    &__head{
+        background-color: #fe8b3d;
+        color: #FFF;
+        $font-size: 24;
+        font-size: em($font-size);
+        font-weight: 600;
+        padding: em(17, $font-size) 0;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        &.icon10{
+            background-position: -23px -13px;
+        }
+        &.icon11{
+            background-position: -19px -5px;
+        }
+        &.icon12{
+            background-position: -24px 0;
+        }
+    }
+    &__content{
+        height: 200px;
+        padding: em(17) em(30) em(12);
+        overflow: hidden;
+        position: relative;
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 25px;
+            bottom: 0;
+            left: 0;
+            background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+            background-image: linear-gradient(to bottom,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,1) 100%);
+        }
+        h6{
+            $font-size: 20;
+            font-size: em($font-size);
+            font-weight: 600;
+            padding-bottom: em(2, $font-size);
+        }
+        .subtitle{
+            $font-size: 14;
+            font-size: em($font-size);
+            font-weight: 600;
+            padding-bottom: em(14, $font-size);
+            display: block;
+        }
+        p{
+            color: #858585;
+            $font-size: 14;
+            font-size: em($font-size);
+            line-height: 1.6;
+        }
+    }
+}

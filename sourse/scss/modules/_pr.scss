@@ -1,0 +1,75 @@
+.pr{
+    &-button{
+        font-family: $base__font;
+        display: inline-block;
+        text-decoration: none;
+        $color: #fff;
+        color: $color;
+        $font-size: 18;
+        font-size: rem($font-size);
+        font-weight: 600;
+        border: 2px solid #FFF;
+        border-radius: 1px;
+        padding: rem(14) rem(35);
+        transition:background-color .3s, color .3s;
+        background-color: transparent;
+        cursor: pointer;
+        line-height: 1.5;
+        box-sizing: border-box;
+        &:hover{
+            background-color: $color;
+            color: #000;
+        }
+        &_block{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &-button-v2{
+        font-family: $base__font;
+        display: inline-block;
+        line-height: 1.5;
+        text-decoration: none;
+        color: #373737;
+        $font-size: 13;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        cursor: pointer;
+        background-color: #E4E4E4;
+        background-image: linear-gradient(to top, #E7E7E7 0%, #F6F6F6 100%);
+        border: 1px solid #DEDEDE;
+        border-radius: 2px;
+        padding: em(10, $font-size) em(10, $font-size);
+        vertical-align: middle;
+        box-sizing: border-box;
+        &:hover{
+            background-image: linear-gradient(to top, #F6F6F6 0%, #E7E7E7 100%);
+        }
+        &_block{
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &-list{
+        padding: em(10) 0;
+        $font-size: 14;
+        li{
+            color: #B4B4B4;
+            font-size: rem($font-size);
+            padding: em(9, $font-size) 0 em(9, $font-size) em(47, $font-size);
+            list-style: none;
+            background-repeat:no-repeat;
+            background-position: 0 em(10, $font-size);
+        }
+        &.checklist li{
+            background-image: url(../images/b64/checklist.png);
+        }
+        &.alertlist li{
+            background-position: 0 em(6, $font-size);
+            background-image: url(../images/b64/alertlist.png);
+        }
+    }
+}

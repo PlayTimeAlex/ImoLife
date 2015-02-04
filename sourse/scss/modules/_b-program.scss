@@ -1,0 +1,79 @@
+.b-program{
+    background: url(../images/b-program__bg.jpg) no-repeat center center;
+    background-size: cover;
+    &__title{
+        color: #FFF;
+        $font-size: 36;
+        font-size: em($font-size);
+        text-align: center;
+        padding-bottom: em(11, $font-size);
+    }
+    &__subtitle{
+        color: #FFF;
+        $font-size: 15;
+        font-size: em($font-size);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__feature{
+        color: #FFF;
+        $font-size: 13;
+        font-size: em($font-size);
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        padding-top: 166px;
+        &:before{
+            content:"";
+            display: block;
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -72px;
+            background-color: #232323;
+            border: 2px solid #424242;
+            box-shadow:0 0 0 10px #232323;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+        &.icon1:before{
+            background-image: url(../images/b64/icon1.png);
+        }
+        &.icon2:before{
+            background-image: url(../images/b64/icon2.png);
+        }
+        &.icon3:before{
+            background-image: url(../images/b64/icon3.png);
+        }
+    }
+    &__features{
+        padding-top: em(65);
+    }
+    .text{
+        p{
+            color: #B4B4B4;
+            $font-size: 14;
+            font-size: em($font-size);
+        }
+    }
+    &__ctitle{
+        color: #FFF;
+        $font-size: 24;
+        font-size: em($font-size);
+    }
+    &__content{
+        padding-top: em(75);
+    }
+    &__slogan{
+        color: #B4B4B4;
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 600;
+        line-height: 2;
+        text-transform: uppercase;
+        padding: em(18, $font-size) 0 em(50, $font-size);
+    }
+}

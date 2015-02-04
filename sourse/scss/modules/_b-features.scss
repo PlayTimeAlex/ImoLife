@@ -1,0 +1,60 @@
+.b-features{
+    background: url(../images/b64/b-features__bg.png);
+    &__title{
+        display: block;
+        text-align: center;
+        color: #373737;
+        $font-size: 36;
+        font-size: em($font-size);
+        font-weight: 300;
+        padding: em(6, $font-size) 0;
+        &:after{
+            content:"";
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            vertical-align: middle;
+            background: url(../images/b64/b-features__title.png) no-repeat center center;
+            margin-left: 14px;
+        }
+    }
+    &__subtitle{
+        display: block;
+        text-align: center;
+        color: #373737;
+        $font-size: 15;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: em(67, $font-size);
+    }
+    &__content{
+        background: url(../images/b-features_bg.jpg) no-repeat #232323;
+        background-size: cover;
+        padding: 0 0 em(100);
+        padding: em(440) 0 0 0;
+        background-clip: content-box;
+    }
+    &__up{
+        margin-top: -356px;
+        padding-bottom: em(100);
+    }
+    &__reg{
+        text-align: center;
+        padding-top: em(30);
+    }
+    &__rtitle{
+        color: #FFF;
+        $font-size: 36;
+        font-size: em($font-size);
+        font-weight: 300;
+        text-align: center;
+        padding: 0 0 em(21, $font-size);
+    }
+    &__reasons {
+        counter-reset: point;
+        .b-numders{
+            counter-reset: none;
+        }
+    }
+}
