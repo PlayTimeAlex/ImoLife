@@ -1,5 +1,5 @@
 <?php
-sleep (5);
+
 //debug mode.
 define("DEBUG", false);
 
