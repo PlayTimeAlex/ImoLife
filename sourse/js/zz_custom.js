@@ -232,11 +232,23 @@
                 }
             }
         };
+
+        $('.b-videos__citem').click(function(){
+            $('#js-videow').attr('src', $(this).attr('href'));
+            console.log($(this).attr('href'));
+            return false;
+        });
     });
 
     $(window).load(function() {
         $('.b-slider').flexslider({
             controlNav: false
+        });
+        $('.b-flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            controlNav: false,
+            slideshow: false
         });
     });
 }(jQuery));

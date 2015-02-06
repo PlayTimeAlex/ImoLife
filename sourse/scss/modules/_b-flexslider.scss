@@ -1,0 +1,72 @@
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.b-flexslider a:active,
+.flex-container a:focus,
+.b-flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.b-flexslider {margin: 0; padding: 0;}
+.b-flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.b-flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.b-flexslider .slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+
+.b-flexslider{
+    position: relative;
+    .slides{
+        li{
+            display: none;
+            &:first-child{
+                display: block;
+            }
+        }
+    }
+    .flex-prev, .flex-next{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: -100px;
+        margin-top: -50px;
+        background: url(../images/b64/slide-left.png) no-repeat center center #191919;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        padding: 60px 60px 0 0;
+        overflow: hidden;
+        border-radius:50%;
+        z-index: 10;
+    }
+    .flex-next{
+        background-image: url(../images/b64/slide-right.png);
+        left: auto;
+        right: -100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .b-flexslider{
+        .flex-prev, .flex-next{
+            left: 0;
+        }
+        .flex-next{
+            left: auto;
+            right: 0;
+        }
+    }
+}

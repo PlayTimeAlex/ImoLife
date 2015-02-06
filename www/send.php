@@ -32,7 +32,7 @@ $messages = array(
 */
 $forms = array(
 	"id1" => array(
-		"to" => "office@imolife.org",
+		"to" => "maximvolkovski@gmail.com",
 		"from" => "ImoLive", //пока так. Поле от кого с возможностью ответа
 		"subject" => "ImoLive - промо сайт",
 		"fields" => array(
