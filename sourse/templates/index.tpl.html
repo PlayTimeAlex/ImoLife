@@ -13,7 +13,6 @@
         @@include('blocks/_header-scripts.html')
     </head>
     <body>
-        @@include('blocks/_after-body-scripts.html')
         <header class="b-header">
             <div class="b-header__top">
                 <div class="container">
@@ -27,7 +26,7 @@
                         <div class="span8">
                             <nav class="b-topnav">
                                 <ul>
-                                    <li class="b-topnav__item"><a class="anim-scroll" href="#promo">Главная</a></li>
+                                    <li class="b-topnav__item"><a class="anim-scroll current" href="#promo">Главная</a></li>
                                     <li class="b-topnav__item"><a class="anim-scroll" href="#program">Тренинг</a></li>
                                     <li class="b-topnav__item"><a class="anim-scroll" href="#spikers">Спикеры</a></li>
                                     <li class="b-topnav__item"><a class="anim-scroll" href="#features">Отмазки</a></li>
@@ -39,7 +38,7 @@
                         </div>
                         <div class="span4">
                             <div class="b-header__tel">+996 550 50 0051</div>
-                            <a class="pr-button-v2 colorbox_form" href="#rcall">Позвоните мне</a>
+                            <a onclick="ga('send', 'event', 'Details', 'Callback')" class="pr-button-v2 colorbox_form" href="#rcall">Позвоните мне</a>
                         </div>
                     </div>
                 </div>
@@ -53,8 +52,9 @@
                 </div>
                 <h1 class="b-promo__title">Пошаговая Направляющая Программа по<br />Достижению Целей</h1>
                 <div class="b-promo__reg">
-                    <a class="pr-button colorbox_form" href="#rcall">РЕГИСТРАЦИЯ</a>
+                    <a onclick="ga('send', 'event', 'Details', 'Registration')" class="pr-button colorbox_form" href="#rcall">РЕГИСТРАЦИЯ</a>
                 </div>
+                <div class="b-promo__scroll">КРУТИТЕ НИЖЕ</div>
             </div>
         </div>
         <div class="b-reasons">
@@ -87,7 +87,7 @@
                                         <h3>Хочешь большего?</h3>
                                         <p><strong>Ты наемный сотрудник, работаешь в хорошей компании, но знаешь, что хочешь большего, чем просто выполнять свою функцию.</strong></p>
                                         <p>Если хочешь зарабатывать больше, чтобы тебя ценили, чувствовать свою значимость и достигать тех результатов, которых ты так давно хотел, доказать себе и другим, что ты лучший, значит, не жди, что все произойдет без тебя - начни создавать свое будущее прямо сейчас!</p>
-                                        <p><a class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
+                                        <p><a onclick="ga('send', 'event', 'Details', 'YouHaveToUs')" class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                                         <h3>Сейчас или потом?</h3>
                                         <p><strong>Ты человек, у которого в голове столько мечтаний и целей, что не сосчитать.</strong></p>
                                         <p>Здесь ты получишь знания, благодаря которым станешь воплощать все свои мечты в реальность. И так всю свою жизнь будешь достигать все больше и больше, постепенно реализовывая то, чего так давно желал. Твои мечты рядом - тебе осталось только принять решение. Сейчас или потом (а мы с тобой знаем, сколько раз ты говорил "потом").</p>
-                                        <p><a class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
+                                        <p><a onclick="ga('send', 'event', 'Details', 'YouHaveToUs')" class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +125,7 @@
                                         <h3>Выйди на новый уровень!</h3>
                                         <p><strong>Ищешь, где взять новых клиентов, зарабатывать больше, выйти на новый уровень? Ты, вроде как, свободный человек, но времени не хватает.</strong></p>
                                         <p>Ты получишь новые стратегии общения с клиентами, партнерами и конкурентами. Получишь массу новых знакомств. Ты получишь знания, как заставить время работать по твоим правилам, а самое важное - получишь "инструмент", ускоряющий твои результаты. Выйдешь на тот уровень, от которого мурашки по коже (мы с тобой знаем, что чем сложнее цель, тем слаще результат).</p>
-                                        <p><a class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
+                                        <p><a onclick="ga('send', 'event', 'Details', 'YouHaveToUs')" class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                         <h3>Измени свою жизнь!</h3>
                                         <p><strong>Это человек, которому близкие важнее всего.</strong></p>
                                         <p>Ты даже не представляешь, как сильно ты изменишь свою жизнь после тренинга! Создашь те отношения, о которых ты мечтал. Создашь крепкие, доверительные отношения со своими родителями, детьми, любимыми.<br />Внимание!<br />Твои родные, не будучи на тренинге, тоже выиграют. После тренинга ты вернешься другим человеком. Все, что было до этого, будет уже неважно - будет важно лишь то, что, чем счастливее будут они, тем лучше будешь чувствовать себя ты.</p>
-                                        <p><a class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
+                                        <p><a onclick="ga('send', 'event', 'Details', 'YouHaveToUs')" class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -163,7 +163,7 @@
                                         <h3>Запутался?</h3>
                                         <p><strong>Человек, который запутался, не понимает, чего хочет, не понимает, зачем это все.</strong></p>
                                         <p>Ты получишь ответы на эти и на многие другие вопросы. Именно эта категория людей, после нашего тренинга быстрее всех достигает результатов. Ты определишь, что важно тебе, перестанешь делать из мухи слона. Ты начнешь радоваться своим результатам, ведь их станет больше, и они станут реально велики.</p>
-                                        <p><a class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
+                                        <p><a onclick="ga('send', 'event', 'Details', 'YouHaveToUs')" class="b-reasons__reg colorbox_form" href="#rcall">Тебе к нам!</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +213,7 @@
                                     </div>
                                     <div class="b-sform__el">
                                         <input type="hidden" name="formId" value="id1" />
-                                        <button class="pr-button pr-button_block b-sform__submit js-form__submit" type="submit">Получить подарок</button>
+                                        <button onclick="ga('send', 'event', 'Details', 'Gift')" class="pr-button pr-button_block b-sform__submit js-form__submit" type="submit">Получить подарок</button>
                                     </div>
                                     <div class="b-sform__response-output js-form__output"></div>
                                 </form>
@@ -283,12 +283,12 @@
                                 </li>
                                 <li>
                                     <h4 class="b-numders__title">Лидерская программа</h4>
-                                    <p>— 4 уикенда (выходных), в рамках которого каждый будет определять и идти к 2 личным целям и к 2 командным.</p>
+                                    <p>— Четыре уикенда (выходных), в рамках которого каждый определит две личные, две командные цели и будет идти к ним.</p>
                                 </li>
                             </ol>
                             <p class="b-program__slogan">Это не просто самый важный тренинг в твоей жизни. Это невероятно позитивный, интуитивно понятный и доступный для расширения сознания инструмент, заряженный только самыми положительными эмоциями! Поверь в себя! Вложи в себя свое время! Тебе доступно все! Ты можешь все!</p>
                             <div class="b-program__reg">
-                                <a class="pr-button colorbox_form" href="#rcall">РЕГИСТРАЦИЯ</a>
+                                <a onclick="ga('send', 'event', 'Details', 'Registration_2')" class="pr-button colorbox_form" href="#rcall">РЕГИСТРАЦИЯ</a>
                             </div>
                         </div>
                     </div>
@@ -306,7 +306,7 @@
                                 <div class="b-image">
                                     <img src="images/content/b-spikers.jpg" alt="Спикеры тренинга"/>
                                 </div>
-                                <a class="b-spikers__button colorbox_form" href="#rcall">Задать вопрос тренеру</a>
+                                <a onclick="ga('send', 'event', 'Details', 'QuestionTrener')" class="b-spikers__button colorbox_form" href="#rcall">Задать вопрос тренеру</a>
                             </div>
                         </div>
                         <div class="span6">
@@ -336,7 +336,7 @@
                             </div>
                             <div class="b-sform__el">
                                 <input type="hidden" name="formId" value="id1" />
-                                <button class="pr-button pr-button_block b-sform__submit js-form__submit" type="submit">Получить скидку</button>
+                                <button onclick="ga('send', 'event', 'Details', 'Gift')" class="pr-button pr-button_block b-sform__submit js-form__submit" type="submit">Получить скидку</button>
                             </div>
                             <div class="b-sform__response-output js-form__output"></div>
                         </form>
@@ -447,16 +447,16 @@
                             </div>
                         </div>
                         <div class="b-features__reg">
-                            <a class="pr-button colorbox_form" href="#rcall">Получить бесплатную консультацию</a>
+                            <a onclick="ga('send', 'event', 'Details', 'FreeAdvice')" class="pr-button colorbox_form" href="#rcall">Получить бесплатную консультацию</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="b-videos">
+        <div class="b-videos" id="reviews">
             <div class="container">
                 <div class="b-videos__item">
-                    <iframe id="js-videow" width="640" height="360" src="https://www.youtube.com/embed/Ud4oXzoweMY" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="js-videow" width="640" height="360" src="https://www.youtube.com/embed/GtP5WLW2730" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="b-videos__carusel">
@@ -470,27 +470,56 @@
                             <li>
                                 <div class="row">
                                     <div class="span3">
-                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/Ud4oXzoweMY">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/GtP5WLW2730">
+                                            <img src="images/content/GtP5WLW2730.jpg" alt=""/>
+                                            <span class="title">Ты Superman!</span>
                                         </a>
                                     </div>
                                     <div class="span3">
                                         <a class="b-videos__citem" href="https://www.youtube.com/embed/ApjzbbjuVgw">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                            <img src="images/content/ApjzbbjuVgw.jpg" alt=""/>
+                                            <span class="title">История про обезьянку Imo</span>
                                         </a>
                                     </div>
                                     <div class="span3">
                                         <a class="b-videos__citem" href="https://www.youtube.com/embed/MVB7CnaNBWg">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                            <img src="images/content/MVB7CnaNBWg.jpg" alt=""/>
+                                            <span class="title">Новый взгляд на жизнь!</span>
                                         </a>
                                     </div>
                                     <div class="span3">
                                         <a class="b-videos__citem" href="https://www.youtube.com/embed/d2RJz7uC9dk">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                            <img src="images/content/d2RJz7uC9dk.jpg" alt=""/>
+                                            <span class="title">Как реализовать свой потенциал в жизни</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="row">
+                                    <div class="span3">
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/tcZuvMfEMfs">
+                                            <img src="images/content/tcZuvMfEMfs.jpg" alt=""/>
+                                            <span class="title">Как быть эффективным в любом деле</span>
+                                        </a>
+                                    </div>
+                                    <div class="span3">
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/Ud4oXzoweMY">
+                                            <img src="images/content/Ud4oXzoweMY.jpg" alt=""/>
+                                            <span class="title">Повышение личной эффективности</span>
+                                        </a>
+                                    </div>
+                                    <div class="span3">
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/MTTN8BtXGYk">
+                                            <img src="images/content/MTTN8BtXGYk.jpg" alt=""/>
+                                            <span class="title">Успешный человек – успешен во всем</span>
+                                        </a>
+                                    </div>
+                                    <div class="span3">
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/nctTjjiPCzY">
+                                            <img src="images/content/nctTjjiPCzY.jpg" alt=""/>
+                                            <span class="title">Неприметный сотрудник или офисный "планктон"</span>
                                         </a>
                                     </div>
                                 </div>
@@ -498,21 +527,37 @@
                             <li>
                                 <div class="row">
                                     <div class="span3">
-                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/MTTN8BtXGYk">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/WCY99o1A4kI">
+                                            <img src="images/content/WCY99o1A4kI.jpg" alt=""/>
+                                            <span class="title">Отзывы клиентов. Imolife раскроет Ваш потециал</span>
                                         </a>
                                     </div>
                                     <div class="span3">
-                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/nctTjjiPCzY">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/1ogLdVgvCVc">
+                                            <img src="images/content/1ogLdVgvCVc.jpg" alt=""/>
+                                            <span class="title">Отзывы клиентов. Верный шаг в Imolife</span>
                                         </a>
                                     </div>
+                                    <div class="span3">
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/oXOp0-cTToM">
+                                            <img src="images/content/oXOp0-cTToM.jpg" alt=""/>
+                                            <span class="title">Отзывы клиентов. Развивайтесь вместе с Imolife</span>
+                                        </a>
+                                    </div>
+                                    <div class="span3">
+                                        <a class="b-videos__citem" href="https://www.youtube.com/embed/uKwo3sx184k">
+                                            <img src="images/content/uKwo3sx184k.jpg" alt=""/>
+                                            <span class="title">Отзывы клиентов. Imolife меняет жизнь</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
                                     <div class="span3">
                                         <a class="b-videos__citem" href="https://www.youtube.com/embed/YzNAx6H99NY">
-                                            <img src="images/content/video-prev.jpg" alt=""/>
-                                            <span class="title">ПРАВИЛА НАТУРАЛЬНОГО ТРЕНИНГА</span>
+                                            <img src="images/content/YzNAx6H99NY.jpg" alt=""/>
+                                            <span class="title">Imolife. Главное верить в себя!</span>
                                         </a>
                                     </div>
                                 </div>
@@ -535,13 +580,13 @@
                                 <p>+996 550 50 0051<br />+996 779 97 9602<br />+996 772 30 6389</p>
                             </div>
                             <div class="b-contacts__button-wrap">
-                                <a class="pr-button-v2 colorbox_form" href="#rcall">Позвоните мне</a>
+                                <a onclick="ga('send', 'event', 'Details', 'Callback')" class="pr-button-v2 colorbox_form" href="#rcall">Позвоните мне</a>
                             </div>
                         </div>
                         <div class="span4">
                             <div class="b-citem icon7">
                                 <span class="b-citem__title">Место проведения</span>
-                                <p>Кыргыстанг, г.Бишкек,<br />пр-т Мира 93,<br />Отель Ак-Кеме</p>
+                                <p>Кыргызстан, г. Бишкек,<br />пр-т Мира 93,<br />Отель Ак-Кеме</p>
                             </div>
                             <div class="b-citem icon8">
                                 <span class="b-citem__title">E-mail</span>
@@ -555,7 +600,7 @@
                             </div>
                             <div class="b-citem icon7">
                                 <span class="b-citem__title">Офис</span>
-                                <p>Кыргыстанг, г.Бишкек,<br />ул.Московская 71, 2-этаж.</p>
+                                <p>Кыргызстан, г. Бишкек,<br />ул. Московская 71, 2-этаж.</p>
                             </div>
                         </div>
                     </div>
@@ -603,7 +648,6 @@
                 </form>
             </div>
         </div>
-
-        @@include('blocks/_footer-scripts.html')
+        <a class="pr-scroll-top anim-scroll" href="#promo"></a>
     </body>
 </html>

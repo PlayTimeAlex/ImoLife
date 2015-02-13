@@ -58,12 +58,17 @@
         }
 
         var $header = $('.b-header');
+        var $scrollTopLink = $('.pr-scroll-top');
         $(window).scroll(function(){
             if($(window).scrollTop() > 165){
                 $header.addClass('fixed');
+                $scrollTopLink.show(200);
             } else {
                 $header.removeClass('fixed');
+                $scrollTopLink.hide(200);
             }
+
+
         });
 
         //Плейсхолдер на ИЕ9

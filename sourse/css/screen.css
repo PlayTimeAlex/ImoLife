@@ -180,6 +180,17 @@ a:hover {
   .pr-list.alertlist li {
     background-position: 0 0.42857em;
     background-image: url(../images/b64/alertlist.png); }
+.pr-scroll-top {
+  padding: 60px 60px 0 0;
+  width: 0;
+  height: 0;
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100;
+  display: none;
+  background: url(../images/b64/to-top_btn.png) no-repeat; }
 
 .b-image img {
   box-sizing: border-box;
@@ -369,10 +380,31 @@ body {
       .b-topnav__item > a.current {
         background-color: #dddddd; }
 
+@keyframes scrollArrow {
+  0% {
+    background-position: center 20%;
+    opacity: 0; }
+
+  10% {
+    opacity: 1; }
+
+  70% {
+    opacity: 1; }
+
+  100% {
+    background-position: center 90%;
+    opacity: 0; } }
+
 .b-promo {
-  padding: 33.8em 0 8.3em;
+  padding: 22.8em 0 4.3em;
   background: url(../images/b-promo_bg.jpg) no-repeat center center #242718;
-  background-size: cover; }
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  position: relative; }
+  .b-promo > .container {
+    align-self: center; }
   .b-promo__title {
     color: #FFF;
     font-size: 4.2em;
@@ -397,7 +429,34 @@ body {
       padding: 0 1.2em; }
   .b-promo__reg {
     text-align: center;
-    padding-top: 5.3em; }
+    padding-top: 1.3em; }
+  .b-promo__scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #219eff;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2.27273em 0 1.36364em;
+    z-index: 20;
+    background-color: #fff; }
+    .b-promo__scroll:before, .b-promo__scroll:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: -27px;
+      margin-left: -25px; }
+    .b-promo__scroll:after {
+      background: url(../images/b64/arrow-down.svg) no-repeat center center;
+      animation: scrollArrow 1.5s linear infinite; }
 
 .b-reasons {
   background: url(../images/b64/b-reasons.png);
@@ -1007,13 +1066,13 @@ body {
 .b-videos {
   background: url(../images/b-video_bg.jpg) no-repeat 50% 50%;
   background-size: cover;
-  padding: 16em 0 0; }
+  padding: 8em 0 0; }
   .b-videos__item {
     padding: 1em;
     width: 640px;
     margin: 0 auto;
     background: url(../images/b-program__bg.jpg) no-repeat center center;
-    margin-bottom: 2px;
+    margin-bottom: 8em;
     border-radius: 5px; }
   .b-videos__carusel {
     background-color: #2d2d2d;

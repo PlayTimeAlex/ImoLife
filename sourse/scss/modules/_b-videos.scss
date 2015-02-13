@@ -1,13 +1,13 @@
 .b-videos{
     background: url(../images/b-video_bg.jpg) no-repeat 50% 50%;
     background-size: cover;
-    padding: em(160) 0 0;
+    padding: em(80) 0 0;
     &__item{
         padding: em(10);
         width: 640px;
         margin: 0 auto;
         background: url(../images/b-program__bg.jpg) no-repeat center center;
-        margin-bottom: 2px;
+        margin-bottom: em(80);
         border-radius: 5px;
     }
     &__carusel{

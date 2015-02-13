@@ -1,7 +1,30 @@
+@keyframes scrollArrow {
+    0%   {
+        background-position: center 20%;
+        opacity:0;
+    }
+    10% {
+        opacity:1;
+    }
+    70% {
+        opacity:1;
+    }
+    100% {
+        background-position: center 90%;
+        opacity:0;
+    }
+}
 .b-promo{
-    padding: em(338) 0 em(83);
+    padding: em(228) 0 em(43);
     background: url(../images/b-promo_bg.jpg) no-repeat center center #242718;
     background-size: cover;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    > .container{
+        align-self: center;
+    }
     &__title{
         color: #FFF;
         $font-size: 42;
@@ -32,6 +55,37 @@
     }
     &__reg{
         text-align: center;
-        padding-top: em(53);
+        padding-top: em(13);
+    }
+    &__scroll{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #219eff;
+        $font-size: 11;
+        font-size: em($font-size);
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: em(25, $font-size) 0 em(15, $font-size);
+        z-index: 20;
+        background-color: #fff;
+        &:before, &:after{
+            content:"";
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background:#fff;
+            position: absolute;
+            left: 50%;
+            top: -27px;
+            margin-left: -25px;
+        }
+        &:after{
+            background: url(../images/b64/arrow-down.svg) no-repeat center center;
+            animation: scrollArrow 1.5s linear infinite;
+        }
     }
 }
